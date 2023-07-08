@@ -1,0 +1,26 @@
+[2023-07-08 18:35:21,268] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: Regions_ETL.envio_mail scheduled__2023-07-07T00:00:00+00:00 [queued]>
+[2023-07-08 18:35:21,286] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: Regions_ETL.envio_mail scheduled__2023-07-07T00:00:00+00:00 [queued]>
+[2023-07-08 18:35:21,287] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-08 18:35:21,288] {taskinstance.py:1239} INFO - Starting attempt 2 of 6
+[2023-07-08 18:35:21,288] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-08 18:35:21,310] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): envio_mail> on 2023-07-07 00:00:00+00:00
+[2023-07-08 18:35:21,317] {standard_task_runner.py:52} INFO - Started process 399 to run task
+[2023-07-08 18:35:21,324] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'Regions_ETL', 'envio_mail', 'scheduled__2023-07-07T00:00:00+00:00', '--job-id', '13', '--raw', '--subdir', 'DAGS_FOLDER/ETL_Regions.py', '--cfg-path', '/tmp/tmp3agz3aup', '--error-file', '/tmp/tmpvbl5mzv_']
+[2023-07-08 18:35:21,326] {standard_task_runner.py:77} INFO - Job 13: Subtask envio_mail
+[2023-07-08 18:35:21,505] {logging_mixin.py:109} INFO - Running <TaskInstance: Regions_ETL.envio_mail scheduled__2023-07-07T00:00:00+00:00 [running]> on host 3c75c5b6d9e6
+[2023-07-08 18:35:21,676] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2023-07-08 18:35:21,706] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=gastonrios32
+AIRFLOW_CTX_DAG_ID=Regions_ETL
+AIRFLOW_CTX_TASK_ID=envio_mail
+AIRFLOW_CTX_EXECUTION_DATE=2023-07-07T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-07-07T00:00:00+00:00
+[2023-07-08 18:35:24,609] {logging_mixin.py:109} INFO - El correo fue enviado de forma satisfactoria
+[2023-07-08 18:35:24,612] {python.py:175} INFO - Done. Returned value was: None
+[2023-07-08 18:35:24,663] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=Regions_ETL, task_id=envio_mail, execution_date=20230707T000000, start_date=20230708T183521, end_date=20230708T183524
+[2023-07-08 18:35:24,716] {local_task_job.py:154} INFO - Task exited with return code 0
+[2023-07-08 18:35:24,880] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
